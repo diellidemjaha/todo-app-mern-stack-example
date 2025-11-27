@@ -55,8 +55,8 @@ app.delete("/todos/:id", async (req, res) => {
   res.json({ message: "Todo deleted" });
 });
 
-
+const PORT = process.env.PORT;
 // Start server
-app.listen(5000, () => {
+app.listen(PORT, () => {
   console.log("Backend running on http://localhost:5000");
 });
